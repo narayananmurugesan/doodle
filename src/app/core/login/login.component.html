@@ -1,0 +1,17 @@
+<div class="bg-image">
+    <div class="login">
+      <div class="form-group">
+        <label for="">Username</label>
+<input type="text" name="username" id="username" [(ngModel)]="username" class="form-control" placeholder="Username"
+  aria-describedby="helpId">
+      </div>
+      <div class="form-group">
+        <label for="">Password</label>
+<input type="password" name="password" id="password" [(ngModel)]="password" class="form-control" placeholder="Password"
+  aria-describedby="helpId">
+      </div>
+      <div class="form-group text-center mb-20">
+          <button class="btn btn-md bg-primary" (click)="loginSubmit()" type="button">Submit</button>
+      </div>
+    </div>
+</div>

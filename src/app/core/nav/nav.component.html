@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="col-md-offset-2 col-md-5">
+    <input type="text" class="form-control nav-input" placeholder="Search"/>
+  </div>
+  <div class="col-md-5">
+      <ul class="navbar-nav pull-right">
+            <li class="nav-item">
+              <i class="fa fa-building-o"></i>
+      </li>
+      <li class="nav-item">
+        <i class="fa fa-bell"></i>
+      </li>
+      <li class="nav-item">
+        <img src="../../../assets/user.jpg">
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="sidenav">
+  <div class="side-b">
+<button class="btn btn-md btn-primary btn-r" (click)="newCompose()">Compose</button>
+  </div>
+  
+<a routerLink="index" routerLinkActive="active">Inbox</a>
+<a routerLink="send" routerLinkActive="active">Send Item</a>
+</div>
+
+<app-mail-compose *ngIf="composeShow" [class.compose]="composeShow" [composeShowOption]="composeShow"></app-mail-compose>

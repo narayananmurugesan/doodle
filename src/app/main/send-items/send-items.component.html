@@ -1,0 +1,16 @@
+<ul class="nav nav-tabs">
+  <li class="active"><a><i class="fa fa-inbox"></i>Primary</a></li>
+  <li><a><i class="fa fa-users"></i>Social</a></li>
+</ul>
+<table class="table">
+  <tbody>
+    <tr *ngFor="let user of userList">
+      <td class="normal">
+        <span class="checkmark"></span>
+        <i class="fa fa-eye"></i></td>
+      <td class="normal"><i class="fa fa-dot-circle"></i>{{user.name}}</td>
+      <td class="normal">{{user.desc}}</td>
+    </tr>
+  </tbody>
+</table>
+

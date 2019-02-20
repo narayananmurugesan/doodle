@@ -1,0 +1,52 @@
+.nav-tabs {
+  border-bottom: 0px;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a {
+  border: 0px;
+  border-bottom: 2px solid #0089ff;
+}
+
+.nav-tabs>li>a i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.nav-tabs>li.active>a i {
+  color: #0089ff;
+}
+
+.normal {
+  color: #969696;
+}
+
+tr:hover .normal {
+  color: #333;
+}
+
+input[type="checkbox"] {
+  background-color: #fff;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  border-top: 1px solid #e6e3e3a6;
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 23px;
+  margin-right: 10px;
+  padding-left: 15px;
+  border: 1px solid #e2e1e1;
+  width: 12px;
+  background-color: #fff;
+}

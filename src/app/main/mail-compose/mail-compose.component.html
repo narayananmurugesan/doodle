@@ -1,0 +1,15 @@
+
+<div class="col-md-6 pull-right">
+  <div class="header bg-primary">
+<h4 class="text-white m-0">Compose <span (click)="composeShow=!composeShow"><i class="fa fa-times text-white pull-right"></i></span></h4>
+  </div>
+  <div class="bg-white bodyside">
+    <div class="header">
+
+    </div>
+    <textarea class="form-control height" [(ngModel)]="userInfo">
+
+    </textarea>
+<button class="btn btn-md bg-primary pull-right" (click)="sendValue(userInfo)">Send</button>
+  </div>
+</div>

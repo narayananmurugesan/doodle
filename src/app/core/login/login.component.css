@@ -1,0 +1,21 @@
+.bg-image{
+    background-image: url('../../../assets/login.png');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+.login{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 36%;
+    width: 30%;
+    padding-top: 1%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 1px 3px 9px 0px #424242;
+}
+.login .form-group{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
