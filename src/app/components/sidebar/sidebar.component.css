@@ -1,0 +1,3 @@
+.sidebar:after, .off-canvas-sidebar:after{
+    background: linear-gradient(#fff 0%, #fff 80%) !important;
+}

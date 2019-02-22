@@ -1,0 +1,35 @@
+<div class="panel-header-sm">
+  </div>
+  <!-- <div class="main-content"> -->
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <!-- <div class="card-header">
+                <h4 class="card-title"> Simple Table</h4>
+              </div> -->
+              <div class="card-body">
+                  <table class="table">
+                      <tbody>
+                        <tr *ngFor="let sent of sentList;let i = index">
+                          <td>
+                              <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" [(ngModel)]="sent.checkbox" data-md-icheck class="custom-control-input" id="{{i}}" name="example1">
+                                <label class="custom-control-label" for="{{i}}"></label>
+                              </div>
+                              <span class="fi-align-center"></span>
+                          </td>
+                          <td>
+                          {{sent.subject}}
+                          </td>
+                          <td>
+                          {{sent.desc}}
+                          </td>
+                          <td><i class="now-ui-icons ui-1_simple-remove" (click)="rowRemove(i)" tooltip="Delete"></i></td>
+                        </tr>                 
+                      </tbody>
+                    </table>
+              </div>    
+            </div>      
+    </div>
+  <!-- </div> -->
+  

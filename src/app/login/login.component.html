@@ -1,0 +1,19 @@
+
+<div class="bg-image page-section">
+  <div class="offset-md-3 col-md-5 jumbotron">
+      <h2>Login</h2>
+      <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="form-control" [(ngModel)]="Username"/>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" [(ngModel)]="Password"/>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="LoginSubmit()">Login</button>
+        </div>
+    </form>
+  </div>  
+</div>

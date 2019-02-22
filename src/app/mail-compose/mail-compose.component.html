@@ -1,0 +1,23 @@
+  <div class="row">
+    <div class="col-md-6 mail-align">
+      <div class="card">        
+        <div class="card-body p-0">
+          <div class="alert alert-dark bg-dark pt-2 pb-2 mb-0">
+            <span>New Message</span>
+            <span class="pull-right" (click)="removeMail()"><i class="now-ui-icons ui-1_simple-remove"></i></span>
+          </div>
+          <div class="col-md-12 p-0">
+            <div class="form-group m-0">
+                <input class="form-control input-change" type="text" placeholder="Email" [(ngModel)]="obj.mail" style="border: 1px solid #f7f7f7;border-radius: 0px;"/>
+              </div>
+              <div class="form-group m-0">
+                <input class="form-control input-change" type="text" placeholder="Subject" [(ngModel)]="obj.subject" style="border: 1px solid #f7f7f7;border-radius: 0px;"/>
+              </div>
+              <textarea class="text-area input-change" style="width: 100%" [(ngModel)]="obj.desc"></textarea>
+              <button class="btn btn-md btn-info" (click)="sentMail(obj);showNotification('top','center')">Send</button>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+

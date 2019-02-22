@@ -1,32 +1,36 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
+import { TooltipModule } from "ngx-bootstrap";
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app.routing';
+import { ComponentsModule } from './components/components.module';
+
 import { AppComponent } from './app.component';
-import { LoginComponent } from './core/login/login.component';
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
-import { MainComponent } from './main/main.component';
-import { IndexComponent } from './main/index/index.component';
-import { NavComponent } from './core/nav/nav.component';
-import { MailComposeComponent } from './main/mail-compose/mail-compose.component';
-import { SendItemsComponent } from './main/send-items/send-items.component';
+
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    PageNotFoundComponent,
-    MainComponent,
-    IndexComponent,
-    NavComponent,
-    MailComposeComponent,
-    SendItemsComponent
-  ],
   imports: [
     FormsModule,
-    BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,    
+    HttpClientModule,
+    ComponentsModule,
+    RouterModule,
+    AppRoutingModule,
+    NgbModule,
+    ToastrModule.forRoot(),
+    TooltipModule.forRoot()
+  ],
+  declarations: [
+    AppComponent,
+    AdminLayoutComponent,
+    LoginComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

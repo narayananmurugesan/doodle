@@ -1,0 +1,16 @@
+.mail-align{
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+.text-area{
+    height: 50vh;
+}
+.input-change{
+    border: 1px solid #f7f7f7;
+    border-radius: 0px;
+}
+textarea:focus,
+textarea:active{
+    border: 0px !important;
+}
