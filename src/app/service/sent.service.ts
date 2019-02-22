@@ -6,9 +6,9 @@ import { Injectable } from '@angular/core';
 export class SentService {
 
   public sentList = [
-    {checkbox: true,subject: 'asdasd',desc: 'asdasdasd'},
-    {checkbox: false,subject: 'asdasd',desc: 'asdasdasd'},
-    {checkbox: true,subject: 'asdasd',desc: 'asdasdasd'},
+    {checkbox: true,subject: 'testing',desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '},
+    {checkbox: false,subject: 'Peter',desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '},
+    {checkbox: true,subject: 'Kevin Peterson',desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. '},
   ];
 
   constructor() { }

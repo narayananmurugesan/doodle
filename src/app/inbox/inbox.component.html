@@ -23,7 +23,7 @@
                                   <span class="fi-align-center"></span>
                               </td>
                               <td>
-                              {{sent.subject}}
+                                <i class="now-ui-icons users_single-02 mr-2" [ngStyle]="{'color': 'green'}"></i>{{sent.subject}}
                               </td>
                               <td>
                               {{sent.desc}}
@@ -34,7 +34,8 @@
                         </table>
                   </ng-template>
                 </ngb-tab>
-                  <ngb-tab title="Another tab">
+                  <ngb-tab>
+                    <ng-template ngbTabTitle><span class="title1"><i class="now-ui-icons business_bank mr-2"></i>Promotion</span></ng-template>
                     <ng-template ngbTabContent>
                       <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec
                         egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra
@@ -45,23 +46,12 @@
                     </ng-template>
                   </ngb-tab>
                   <ngb-tab>
-                    <ng-template ngbTabTitle><span class="title1">Styled title</span></ng-template>
+                      <ng-template ngbTabTitle><span class="title1"><i class="now-ui-icons ui-1_email-85 mr-2"></i>Social</span></ng-template>
                     <ng-template ngbTabContent>
                       <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse.
                         Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.
                         Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis
                         cardigan american apparel, butcher voluptate nisi qui.</p>
-                    </ng-template>
-                  </ngb-tab>
-                  <ngb-tab>
-                    <ng-template ngbTabTitle><b>Fancy</b>&nbsp;<i>title</i></ng-template>
-                    <ng-template ngbTabContent>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
-                      <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
-                        beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR.
-                        Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit
-                        sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical
-                        culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed
-                        echo park.</p>
                     </ng-template>
                   </ngb-tab>
               </ngb-tabset>
